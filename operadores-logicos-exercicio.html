@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Exercicio 2</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+        
+            var n1 = prompt('Digite um numero');
+            n1 = parseInt(n1);
+            
+            var n2 = prompt('Digite outro numero');
+            n2 = parseInt(n2);
+            
+            if (n1 === n2){
+                alert('Emapate, fim da partida');
+            } else {
+                var nSorteado = parseInt(Math.random() *2 );
+                alert('nSorteado: ' + nSorteado);
+                
+                if( (nSorteado === 0 && n1 < n2) || (nSorteado === 1 && n1 > n2) ){
+                    alert('Jogador 1 venceu');
+                } else {
+                    alert('Jogador 2 venceu');
+                } 
+            }
+            
+        </script>
+    </body>
+
+</html>
